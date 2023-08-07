@@ -140,7 +140,7 @@ sudo su - your-user
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/dvandal/cryptonote-nodejs-pool.git pool
+git clone https://github.com/Solaris-Network/solaris-nodejs-pool.git pool
 cd pool
 
 npm update
@@ -581,14 +581,6 @@ node init.js -module=api
 
 [Example screenshot](http://i.imgur.com/SEgrI3b.png) of running the pool in single module mode with tmux.
 
-To keep your pool up, on operating system with systemd, you can create add your pool software as a service.  
-Use this [example](https://github.com/dvandal/cryptonote-nodejs-pool/blob/master/deployment/cryptonote-nodejs-pool.service) to create the systemd service `/lib/systemd/system/cryptonote-nodejs-pool.service`
-Then enable and start the service with the following commands : 
-
-```
-sudo systemctl enable cryptonote-nodejs-pool.service
-sudo systemctl start cryptonote-nodejs-pool.service
-```
 
 #### 4) Host the front-end
 
